@@ -7,8 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.jtech.course.UserRepository;
 import com.jtech.course.entities.User;
+import com.jtech.course.repositories.UserRepository;
 
 @Configuration
 @Profile("test")

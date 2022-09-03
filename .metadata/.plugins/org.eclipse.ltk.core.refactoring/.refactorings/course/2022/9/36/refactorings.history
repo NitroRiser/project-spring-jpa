@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;UserRepository.java&apos; to &apos;course/src/main/java/com.jtech.course.repositories&apos;&#x0D;&#x0A;- Original project: &apos;course&apos;&#x0D;&#x0A;- Destination element: &apos;course/src/main/java/com.jtech.course.repositories&apos;&#x0D;&#x0A;- Original element: &apos;com.jtech.course.UserRepository.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jtech.course.repositories" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jtech.course{UserRepository.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1662248268422" units="1" version="1.0"/>
+</session>
