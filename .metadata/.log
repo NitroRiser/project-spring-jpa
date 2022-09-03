@@ -1,0 +1,623 @@
+!SESSION 2022-09-03 18:09:27.645 -----------------------------------------------
+eclipse.buildId=4.15.3.202208110744
+java.version=17.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-09-03 18:09:45.983
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-03 18:09:45.983
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@19c24321,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ba27ce6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-03 18:09:45.983
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@97cb8dc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@261b6c8c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-03 18:09:58.629
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jonathan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY Activator 4 0 2022-09-03 18:12:19.792
+!MESSAGE ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+!STACK 0
+java.lang.reflect.InvocationTargetException
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:91)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:229)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:101)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$2(ProjectConfigurationManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:509)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:298)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$0(ProjectConfigurationManager.java:178)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:148)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:137)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:134)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:85)
+	... 5 more
+Caused by: org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	... 27 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 33 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 36 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 39 more
+Root exception:
+org.eclipse.core.runtime.CoreException: Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:101)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$2(ProjectConfigurationManager.java:515)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:509)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:298)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.lambda$0(ProjectConfigurationManager.java:178)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:148)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:137)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy.createEclipseProjectFromExistingMavenProject(MavenStrategy.java:134)
+	at org.springframework.ide.eclipse.boot.wizard.importing.MavenStrategy$MavenCodeSetImport.run(MavenStrategy.java:85)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.importProject(NewSpringBootWizardModel.java:343)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizardModel.performFinish(NewSpringBootWizardModel.java:322)
+	at org.springframework.ide.eclipse.boot.wizard.NewSpringBootWizard$1.runInWorkspace(NewSpringBootWizard.java:229)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	... 27 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 33 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 36 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 39 more
+
+!ENTRY org.eclipse.core.resources 4 2 2022-09-03 18:12:20.084
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	... 29 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:12:20.084
+!MESSAGE Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:12:20.085
+!MESSAGE Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+
+!ENTRY org.eclipse.core.resources 4 75 2022-09-03 18:12:20.094
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.m2e.core 4 75 2022-09-03 18:12:20.095
+!MESSAGE Errors running builder 'Maven Project Builder' on project 'course'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:417)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	... 29 more
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-03 18:12:20.096
+!MESSAGE Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:12:20.097
+!MESSAGE Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:3.2.0 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:121)
+	at org.eclipse.m2e.core.internal.project.registry.EclipsePluginDependenciesResolver.resolve(EclipsePluginDependenciesResolver.java:49)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(DefaultMavenPluginManager.java:182)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(DefaultMavenPluginManager.java:286)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(DefaultBuildPluginManager.java:244)
+	at org.apache.maven.lifecycle.internal.DefaultLifecycleExecutionPlanCalculator.setupMojoExecution(DefaultLifecycleExecutionPlanCalculator.java:169)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:415)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$1(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.setupMojoExecution(MavenImpl.java:426)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.setupMojoExecution(ProjectRegistryManager.java:1003)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMojoExecution(MavenProjectFacade.java:446)
+	at org.eclipse.m2e.core.project.configurator.AbstractCustomizableLifecycleMapping.getBuildParticipants(AbstractCustomizableLifecycleMapping.java:69)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$1(MavenBuilder.java:112)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:105)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:88)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:198)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1024)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:254)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:311)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:400)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:403)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:514)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:462)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:544)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:259)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.readArtifactDescriptor(DefaultArtifactDescriptorReader.java:175)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.readArtifactDescriptor(DefaultRepositorySystem.java:255)
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(DefaultPluginDependenciesResolver.java:107)
+	... 35 more
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:425)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:229)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:207)
+	at org.apache.maven.repository.internal.DefaultArtifactDescriptorReader.loadPom(DefaultArtifactDescriptorReader.java:244)
+	... 38 more
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 failed to transfer from https://repo.maven.apache.org/maven2 during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.maven.plugins:maven-resources-plugin:pom:3.2.0 from/to central (https://repo.maven.apache.org/maven2): Connect timed out
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:225)
+	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:189)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:574)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:484)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:402)
+	... 41 more
+
+!ENTRY org.eclipse.ui 2 2 2022-09-03 18:15:00.860
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-03 18:19:36.548
+!MESSAGE Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-core:9.0.65
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-core:jar:javadoc:9.0.65
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.apache.tomcat.embed:tomcat-embed-core:jar:javadoc:9.0.65
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:36.548
+!MESSAGE Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-core:jar:javadoc:9.0.65
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:36.548
+!MESSAGE Missing org.apache.tomcat.embed:tomcat-embed-core:jar:javadoc:9.0.65
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-03 18:19:37.055
+!MESSAGE Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-el:9.0.65
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-el:jar:javadoc:9.0.65
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.apache.tomcat.embed:tomcat-embed-el:jar:javadoc:9.0.65
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:37.055
+!MESSAGE Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-el:jar:javadoc:9.0.65
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:37.055
+!MESSAGE Missing org.apache.tomcat.embed:tomcat-embed-el:jar:javadoc:9.0.65
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-09-03 18:19:37.547
+!MESSAGE Could not download javadoc for org.apache.tomcat.embed:tomcat-embed-websocket:9.0.65
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:9.0.65
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:297)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:9.0.65
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:37.547
+!MESSAGE Could not resolve artifact org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:9.0.65
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2022-09-03 18:19:37.547
+!MESSAGE Missing org.apache.tomcat.embed:tomcat-embed-websocket:jar:javadoc:9.0.65
