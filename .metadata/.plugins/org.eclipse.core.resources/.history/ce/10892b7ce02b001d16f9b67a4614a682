@@ -1,0 +1,5 @@
+package com.jtech.course;
+
+public class UserRepository {
+
+}
