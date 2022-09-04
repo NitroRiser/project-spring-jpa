@@ -1,0 +1,5 @@
+package com.jtech.course.entities.enums;
+
+public enum OrderStatus {
+
+}
