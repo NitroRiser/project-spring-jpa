@@ -1245,3 +1245,36 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2022-09-04 16:13:20,952 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-09-04 16:13:20,954 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-04 16:13:20,954 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:13:20,954 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Jonathan\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\course\src\test\resources
+2022-09-04 16:21:46,194 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:21:46,195 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:21:46,198 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-09-04 16:21:46,226 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-04 16:21:46,229 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:21:46,230 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:21:46,230 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Jonathan\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\course\src\test\resources
+2022-09-04 16:22:33,204 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:22:33,205 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:22:33,207 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-09-04 16:22:33,230 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-04 16:22:33,233 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:22:33,233 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:22:33,233 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Jonathan\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\course\src\test\resources
+2022-09-04 16:29:20,648 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:29:20,648 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:29:20,651 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-09-04 16:29:20,678 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-04 16:29:20,681 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:29:20,681 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:29:20,681 [Worker-21: Launching course - CourseApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Jonathan\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\course\src\test\resources
+2022-09-04 16:30:09,912 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@508d81b5{STOPPING}[10.0.9,sto=0]
+2022-09-04 16:30:09,925 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@15ce4770{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-09-04 16:30:09,969 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1d3d8045{/help,null,STOPPED}
+2022-09-04 16:32:11,545 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-04 16:33:05,123 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:33:05,128 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:33:05,138 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-09-04 16:33:05,252 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-04 16:33:05,270 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-04 16:33:05,270 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-04 16:33:05,271 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Jonathan\Documents\workspace-spring-tool-suite-4-4.15.3.RELEASE\course\src\test\resources
